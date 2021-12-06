@@ -23,7 +23,7 @@ class SuperDepartment {
 class AdminDepartment extends SuperDepartment {
 
 	public String departmentName() {
-		String department = "AdminDepartment";
+		String department = "Admin Department";
 		return department;
 	}
 	public String getTodaysWork() {
@@ -86,6 +86,7 @@ public class Driver {
 		System.out.println(admin.getTodaysWork());
 		System.out.println(admin.getWorkDeadline());
 		System.out.println(admin.isTodayAHoliday());
+		System.out.println();
 		
 		HrDepartment hr = new HrDepartment();
 		System.out.println("Welcome" + " "+ hr.departmentName());
@@ -93,6 +94,7 @@ public class Driver {
 		System.out.println(hr.getTodaysWork());
 		System.out.println(hr.getWorkDeadline());
 		System.out.println(hr.isTodayAHoliday());
+		System.out.println();
 		
 		TechDepartment tech = new TechDepartment();
 		System.out.println("Welcome" +" "+ tech.departmentName());
@@ -100,6 +102,7 @@ public class Driver {
 		System.out.println(tech.getWorkDeadline());
 		System.out.println(tech.techStackInformation());
 		System.out.println(tech.isTodayAHoliday());
+		System.out.println();
 	}
 
 }
